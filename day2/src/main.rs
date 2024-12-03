@@ -2,7 +2,6 @@ use std::fs;
 
 use regex::Regex;
 
-const INPUT_PATH: &str = "input.txt";
 fn check_if_safe(report: &Vec<i32>) -> bool {
     let mut prev_num = -1;
     let mut direction = 0;
@@ -33,6 +32,9 @@ fn check_if_safe(report: &Vec<i32>) -> bool {
 
     safe
 }
+
+
+const INPUT_PATH: &str = "input.txt";
 fn main() {
     let re = Regex::new(r"([0-9]+)").unwrap();
 

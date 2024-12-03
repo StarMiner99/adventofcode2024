@@ -2,8 +2,6 @@ use std::fs;
 
 use regex::Regex;
 
-const INPUT_PATH: &str = "day1/input.txt";
-
 fn distance_sum(list1: &mut Vec<u32>, list2: &mut Vec<u32>) -> u32 {
     let mut distance_sum = 0;
 
@@ -33,6 +31,7 @@ fn similarity_score(list1: &Vec<u32>, list2: &Vec<u32>) -> u32 {
     sim_score
 }
 
+const INPUT_PATH: &str = "input.txt";
 fn main() {
     let re = Regex::new(r"([0-9]+)\s{3}([0-9]+)").unwrap();
 

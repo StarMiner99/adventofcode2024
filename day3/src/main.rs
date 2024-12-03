@@ -28,7 +28,7 @@ fn main() {
 
     let input_without_dont = do_re.replace_all(&input, "").into_owned();
 
-    let out_without = do_mul(&input_without_dont);
+    let out_without_dont = do_mul(&input_without_dont);
 
-    println!("out without dont blocks: {}", out_without)
+    println!("out without dont blocks: {}", out_without_dont)
 }
